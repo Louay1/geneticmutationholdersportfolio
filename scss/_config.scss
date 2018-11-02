@@ -4,6 +4,7 @@ $show-home-image: true;
 $home-image: url(../img/background.jpeg);
 $background-opacity: 0.9;
 @mixin easeOut {
+    // The transition method
     transition: all 0.5s ease-out;
 }
 
@@ -11,7 +12,7 @@ $background-opacity: 0.9;
     @if $show-home-image {
         &#bg-image {
             background: $home-image;
-            background-attachment: fixed;
+            background-attachment: fixed; // Prevent the image from scrolling up and dwn with the content!
             background-size: cover;
             &:after {
                 content: "";
